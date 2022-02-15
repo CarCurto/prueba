@@ -1,0 +1,244 @@
+/** VARIABLES */
+$pink: #da4592
+$blanco: white
+$amarillo: yellow  
+$gris: #ccc
+    
+*
+    box-sizing: border-box 
+    margin: 0 
+    padding: 0 
+ 
+html, body    
+    font-family: sans-serif 
+    height: 100%
+    //background: linear-gradient(146deg, rgba(249,77,225,1) 0%, rgba(0,212,255,1) 27%, rgba(5,14,176,1) 64%, rgba(243,96,251,1) 89%)
+    background: url('../../img/4.png') 
+    background-repeat: no-repeat
+a  
+    text-decoration: none   
+
+/** TEXTOS */
+
+h1  
+    margin: calc(1ex / 0.50) 
+    font-size: 2.3em 
+    line-height: calc(1ex / 0.42) 
+     
+
+h2  
+    font-size: 2em 
+    line-height: calc(1ex / 0.42) 
+    margin: calc(1ex / 0.42) 0 
+ 
+h3  
+    font-size: 1.75em 
+    line-height: calc(1ex / 0.38) 
+    margin: calc(1ex / 0.38) 0 
+ 
+
+h4  
+    font-size: 1.5em 
+    line-height: calc(1ex / 0.37) 
+    margin: calc(1ex / 0.37) 0 
+ 
+
+p  
+    font-size: 1em 
+    line-height: calc(1ex / 0.32) 
+    margin: 0 
+
+button
+    background-color: $pink
+    padding: 1em
+    border-radius: 20px
+    font-size: 2.3em
+    color: $blanco
+    font-style: bold
+    box-shadow: 0px
+    line-height: 0px
+
+
+
+.mdi 
+    margin-right: 5px 
+
+.menured
+    font-family: sans-serif
+    display: flex
+    justify-content: flex-end
+    
+    ul
+        display: flex
+        justify-content: space-around
+        padding: 5px 5px 5px 5px
+        width: 200px
+        background-color: $pink
+
+        li
+            display: block
+ 
+.menu 
+    background-color: $pink 
+    color: $blanco 
+    font-family: sans-serif 
+    position: relative
+    display: flex
+    justify-content: center
+    @media screen and (max-width: 700px)
+        position: absolute
+        top: 0
+        left: 0
+    #menu
+        display: none
+    #menu:checked ~ .menuItems
+        display: flex
+        flex-direction: column
+    .mobileIcon
+        display: none
+        padding: 15px
+        @media screen and (max-width: 700px)
+            display: block  
+
+    .menuItems 
+        display: flex 
+        @media screen and (max-width: 700px)
+            display: none
+        .menuitem 
+            list-style: none 
+            padding: 15px 
+        
+        a  
+            color: $blanco  
+            &:hover 
+                color: $amarillo
+    > ul 
+        ul
+            display: none 
+            position: absolute 
+            top: 45px 
+            background-color: $pink 
+            padding: 0 
+        li:hover ul  
+            display:block 
+
+.columns 
+    columns: 3 12rem 
+    column-gap: 4rem 
+    column-rule: 1px solid $gris
+    padding: 4rem 
+    h2 
+        column-span: all 
+        margin: 20px 0 
+        border-bottom: 1px solid $pink
+
+.masonry 
+    columns: 8 12rem 
+    column-gap: 2rem    
+    padding: 4rem     
+ 
+.masonry-item 
+    background-color: #eee 
+    display: inline-block 
+    padding: 2em 
+    width: 100% 
+    margin-bottom: 2rem 
+
+.sitecontainer
+    margin: 5em
+    background: #ffffff2d
+    @media screen and (max-width: 700px)
+        margin: 0
+
+.logo
+    margin: 3em
+    text-align: center
+    display: block
+    background-color: 0%
+
+
+    @media screen and(max-width: 300px)
+        margin: 3em, o.1em
+
+
+
+.entradas
+    display: grid
+    grid-template-rows: auto auto
+    grid-template-columns: auto auto
+    background-color: rgba(255,255,255, 0.4)
+    height: 100%
+    padding: 1em
+    @media screen and(max-width: 800px)
+        display: block
+        .carduno
+            min-height: 250px
+
+    .carduno
+        padding: 1em
+        margin: 3em
+        box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.3)
+        background-color: white
+        border-radius: 5px
+        display: flex
+        .cardunotext, .cardunoimage
+            padding: 1em
+            width: 50%
+   
+    
+.cardunotext
+    display: block
+    padding: 1em
+
+    button
+        display: relative
+        background-color: $pink
+        padding: 1em
+        border-color: 0px 0px 0px 0px rgab(0,0,0,0)
+        border-radius: 20px
+        font-size: 1.5em 
+        color: $blanco
+        font-style: bold
+        line-height: 0px
+        margin: 1em
+        justify-content: space-around
+    a  
+            color: $blanco  
+            &:hover 
+                color: $amarillo
+    
+
+svg 
+    fill: white
+
+.principal
+    background: $blanco
+    border-radius: 23px
+    margin: 5em
+    padding: 2em
+    h1
+        display: flex
+        justify-content: center
+    @media screen and (max-width: 700px)
+        margin: 10vw
+    
+
+.bigimg
+    display: flex
+    justify-content: center
+    padding: 2em
+
+    
+
+.button
+    display: relative
+    background-color: $pink
+    padding: 1em
+    border-color: 0px 0px 0px 0px rgab(0,0,0,0)
+    border-radius: 20px
+    font-size: 1.5em 
+    color: $blanco
+    font-style: bold
+    line-height: 0px
+    margin: 1em
+    justify-content: space-around
